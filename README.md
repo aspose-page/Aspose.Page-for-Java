@@ -19,6 +19,7 @@ Directory | Description
 
 + **Website:** [www.aspose.com](http://www.aspose.com)
 + **Product Home:** [Aspose.Page for Java](https://products.aspose.com/page/java)
++ **Download:** [Download Aspose.Page for Java](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-page)
 + **Documentation:** [Aspose.Page for Java Documentation](https://docs.aspose.com/display/pagejava/Home)
 + **Free Support:** [Aspose.Page for Java Free Support Forum](https://forum.aspose.com/c/page)
 + **Paid Support:** [Aspose.Page for Java Paid Support Forum](https://helpdesk.aspose.com/)
