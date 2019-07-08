@@ -23,9 +23,6 @@
             <groupId>com.aspose</groupId>
             <artifactId>aspose-page</artifactId>
             <version>19.6</version>
-            <scope>system</scope>
-            <systemPath>D:/aspose.page-19.6.jar
-            </systemPath>
         </dependency>
     </dependencies>
 </project>
