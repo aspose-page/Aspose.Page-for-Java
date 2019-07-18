@@ -1,8 +1,8 @@
 ## Aspose.Page-for-Java
 
-[Aspose.Page for Java](http://https://products.aspose.com/page/net) Aspose.Page for Java offers features of creating new as well as manipulating existing XPS and EPS documents. It also provides functionality to convert XPS and EPS files into PDF and Images Documents and vice versa.
+[Aspose.Page for Java](https://products.aspose.com/page/java) Aspose.Page for Java offers features of creating new as well as manipulating existing XPS and EPS documents. It also provides functionality to convert XPS and EPS files into PDF and Images Documents and vice versa.
 
-This repository contains [Examples](Examples) projects for [Aspose.Page for Java](http://https://products.aspose.com/page/net) to help you learn and write your own applications.
+This repository contains [Examples](Examples) projects for [Aspose.Page for Java](https://products.aspose.com/page/java) to help you learn and write your own applications.
 
 <p align="center">
 
