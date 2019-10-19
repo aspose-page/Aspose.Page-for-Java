@@ -33,6 +33,8 @@ public class XPStoJPEG {
                 FileOutputStream imageStream = new FileOutputStream(dataDir + "XPStoJPEG" + "_" + (i + 1) + "_" + (j + 1) + ".jpeg");
                 // Write image
                 imageStream.write(device.getResult()[i][j], 0, device.getResult()[i][j].length);
+                //close the stream
+                imageStream.close();
             }
         }
         // ExEnd:XPStoJPEG

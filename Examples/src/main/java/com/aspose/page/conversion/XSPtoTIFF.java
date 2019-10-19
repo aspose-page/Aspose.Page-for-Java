@@ -30,6 +30,8 @@ public class XSPtoTIFF {
                 FileOutputStream imageStream = new FileOutputStream(dataDir + "XPStoTIFF" + "_" + (i + 1) + "_" + (j + 1) + ".tif");
                 // Write image
                 imageStream.write(device.getResult()[i][j], 0, device.getResult()[i][j].length);
+                // Close the Stream
+                imageStream.close();
             }
         }
         // ExEnd:XSPtoTIFF
