@@ -30,6 +30,8 @@ public class XPStoBMP {
                 FileOutputStream imageStream = new FileOutputStream(dataDir + "XPStoBMP" + "_" + (i + 1) + "_" + (j + 1) + ".bmp");
                 // Write image
                 imageStream.write(device.getResult()[i][j], 0, device.getResult()[i][j].length);
+                
+                imageStream.close();
             }
         }
         // ExEnd:XPStoBMP

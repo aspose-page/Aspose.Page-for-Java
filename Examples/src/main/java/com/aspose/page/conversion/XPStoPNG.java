@@ -30,6 +30,8 @@ public class XPStoPNG {
                 FileOutputStream imageStream = new FileOutputStream(dataDir + "XPStoPNG" + "_" + (i + 1) + "_" + (j + 1) + ".png");
                 // Write image
                 imageStream.write(device.getResult()[i][j], 0, device.getResult()[i][j].length);
+                // Close the Stream
+                imageStream.close();
             }
         }
         // ExEnd:XPStoPNG
