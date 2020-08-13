@@ -25,14 +25,14 @@ Directory | Description
 + Run the file in your IDE (method may vary depending on the IDE you use).
 + The resources folder in the Examples/src folder contains input files used in the examples. It is mandatory that you download this folder along with the examples project.
 
-Please find more details on how to run the examples [here](https://docs.aspose.com/display/pagejava/How+to+Run+Examples).
+Please find more details on how to run the examples [here](https://docs.aspose.com/page/java/how-to-run-examples/).
 
 ## Resources
 
 + **Website:** [www.aspose.com](http://www.aspose.com)
 + **Product Home:** [Aspose.Page for Java](https://products.aspose.com/page/java)
 + **Download:** [Download Aspose.Page for Java](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-page)
-+ **Documentation:** [Aspose.Page for Java Documentation](https://docs.aspose.com/display/pagejava/Home)
++ **Documentation:** [Aspose.Page for Java Documentation](https://docs.aspose.com/page/java/)
 + **Free Support:** [Aspose.Page for Java Free Support Forum](https://forum.aspose.com/c/page)
 + **Paid Support:** [Aspose.Page for Java Paid Support Forum](https://helpdesk.aspose.com/)
 + **Blog:** [Aspose.Page for Java Blog](https://blog.aspose.com/category/page/)
