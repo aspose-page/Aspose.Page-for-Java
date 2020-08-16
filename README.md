@@ -1,8 +1,6 @@
-## Aspose.Page-for-Java
+# .NET APIs for PS, EPS & XPS File Formats
 
-[Aspose.Page for Java](https://products.aspose.com/page/java) Aspose.Page for Java offers features of creating new as well as manipulating existing XPS and EPS documents. It also provides functionality to convert [XPS](https://wiki.fileformat.com/page-description-language/xps/) and [EPS](https://wiki.fileformat.com/page-description-language/eps/) files into [PDF](https://wiki.fileformat.com/view/pdf/) and Images Documents and vice versa.
-
-This repository contains [Examples](Examples) projects for [Aspose.Page for Java](https://products.aspose.com/page/java) to help you learn and write your own applications.
+[Aspose.Page for Java](https://products.aspose.com/page/java) offers to creating & manipulate XPS documents. It also provides functionality to convert XPS, PS & EPS documents to  image formats & PDF.
 
 <p align="center">
 
@@ -13,26 +11,53 @@ This repository contains [Examples](Examples) projects for [Aspose.Page for Java
 
 Directory | Description
 --------- | -----------
-[Examples](Examples)  | A collection of Java examples that help you learn the product features
+[Examples](Examples)  | A collection of Java examples that help you learn the product features.
 
-## How to Run the Examples
+## Manipulate XPS Documents via .NET
 
-+ You can either clone the repository using your favorite GitHub client or download the ZIP file from here.
-+ Extract the contents of the ZIP file to any folder on your computer. All the examples are located in the Examples folder.
-+ You can run/execute these examples with any IDE of your choice.
-+ Open the project in your selected IDE.
-+ Open the example file that you want to run.
-+ Run the file in your IDE (method may vary depending on the IDE you use).
-+ The resources folder in the Examples/src folder contains input files used in the examples. It is mandatory that you download this folder along with the examples project.
+- Create and edit XPS document.
+- Add or remove pages of XPS document.
+- Save XPS documents as raster images & PDF.
+- Work with canvases, paths and glyphs elements.
+- Create vector graphics shapes (Path element) using a set of primitives (elliptical arcs, Bezier curve segments and straight line segments).
+- Create text strings (Glyphs element).
+- Group elements (Canvas element) to manipulate a group as a whole.
+- Manipulate the appearance of graphics and text strings.
+- Use brushes of different types including solid color brush, image brush, visual brush and more.
+- Specify colors in different color spaces including sRGB, scRGB and any space based on ICC profile.
+- Work with multiple documents inside an XPS document.
+- Preserve print tickets in opened XPS document if any.
+- Add default print tickets into new XPS document or an opened one if there’re no tickets in it.
+- Manipulate hyperlinks associated with XPS elements.
+- Manipulate, save and convert XPS outline items.
 
-Please find more details on how to run the examples [here](https://docs.aspose.com/page/java/how-to-run-examples/).
+## Convert PostScript Files via .NET
 
-## Resources
+- Supports PostScript language levels 1-3 with an exception of font types: Type2 (CFF), Type14 (Chameleon), Types 9, 10, 11, 32 (CID-Keyed)
+- Save PS & EPS as PDF & images.
 
-+ **Website:** [www.aspose.com](http://www.aspose.com)
-+ **Product Home:** [Aspose.Page for Java](https://products.aspose.com/page/java)
-+ **Download:** [Download Aspose.Page for Java](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-page)
-+ **Documentation:** [Aspose.Page for Java Documentation](https://docs.aspose.com/page/java/)
-+ **Free Support:** [Aspose.Page for Java Free Support Forum](https://forum.aspose.com/c/page)
-+ **Paid Support:** [Aspose.Page for Java Paid Support Forum](https://helpdesk.aspose.com/)
-+ **Blog:** [Aspose.Page for Java Blog](https://blog.aspose.com/category/page/)
+## Supported Environments
+
+- **Microsoft Windows:** Windows Desktop & Server (x86, x64)
+- **macOS:** Mac OS X
+- **Linux:** Ubuntu, OpenSUSE, CentOS, and others
+- **Java Versions:** `J2SE 8.0 (1.8)` or above
+
+## Get Started with Aspose.Page for Java
+
+Aspose hosts all Java APIs at the [Aspose Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-page). You can easily use Aspose.Page for Java API directly in your Maven projects with simple configurations. For the detailed instructions please visit [Installing Aspose.Page for Java from Maven Repository](https://docs.aspose.com/page/java/installation/) documentation page.
+
+## Add Pages to Existing XPS Document
+
+```java
+// create new XPS Document
+XpsDocument doc = new XpsDocument("output.xps");
+
+// insert an empty page at beginning of pages list
+doc.insertPage(1, true);
+
+// save resultant XPS document
+doc.save("output.xps");
+```
+
+[Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/page/java) | [Docs](https://docs.aspose.com/page/java/) | [Demos](https://products.aspose.app/page/family) | [API Reference](https://apireference.aspose.com/java/page) | [Examples](https://github.com/aspose-page/Aspose.Page-for-Java) | [Blog](https://blog.aspose.com/category/page/) | [Free Support](https://forum.aspose.com/c/page) | [Temporary License](https://purchase.aspose.com/temporary-license)
