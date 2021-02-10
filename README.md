@@ -1,4 +1,5 @@
-# .NET APIs for PS, EPS & XPS File Formats
+ ![GitHub](https://img.shields.io/github/license/aspose-page/Aspose.page-for-java)
+# Java APIs for PS, EPS & XPS File Formats
 
 [Aspose.Page for Java](https://products.aspose.com/page/java) offers to creating & manipulate XPS documents. It also provides functionality to convert XPS, PS & EPS documents to  image formats & PDF.
 
@@ -13,7 +14,7 @@ Directory | Description
 --------- | -----------
 [Examples](Examples)  | A collection of Java examples that help you learn the product features.
 
-## Manipulate XPS Documents via .NET
+## Manipulate XPS Documents via Java
 
 - Create and edit XPS document.
 - Add or remove pages of XPS document.
@@ -31,7 +32,7 @@ Directory | Description
 - Manipulate hyperlinks associated with XPS elements.
 - Manipulate, save and convert XPS outline items.
 
-## Convert PostScript Files via .NET
+## Convert PostScript Files via Java
 
 - Supports PostScript language levels 1-3 with an exception of font types: Type2 (CFF), Type14 (Chameleon), Types 9, 10, 11, 32 (CID-Keyed)
 - Save PS & EPS as PDF & images.
