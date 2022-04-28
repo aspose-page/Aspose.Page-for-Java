@@ -6,6 +6,9 @@
 
 package com.aspose.page.visualBrush;
 
+import java.awt.geom.Point2D;
+import java.awt.geom.Rectangle2D;
+
 import com.aspose.page.utilities.Utils;
 import com.aspose.xps.XpsCanvas;
 import com.aspose.xps.XpsDocument;
@@ -13,8 +16,6 @@ import com.aspose.xps.XpsPath;
 import com.aspose.xps.XpsPathGeometry;
 import com.aspose.xps.XpsTileMode;
 import com.aspose.xps.XpsVisualBrush;
-import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
 
 public class AddGrid {
     public static void main(String[] args) throws Exception
@@ -36,19 +37,18 @@ public class AddGrid {
         XpsPathGeometry pathGeometry = doc.createPathGeometry();
         pathGeometry.addSegment(doc.createPolyLineSegment(
                         new Point2D.Float[] { new Point2D.Float(240f, 5f), new Point2D.Float(240f, 310f), new Point2D.Float(0f, 310f) }));
-        pathGeometry.getFigure(0).setStartPoint(new Point2D.Float(0f, 5f));
-
-        // Path for magenta grid
-        XpsPath gridPath = doc.createPath(pathGeometry);
-        gridPath.setFill(doc.createVisualBrush(visualCanvas,
-                        new Rectangle2D.Float(0f, 0f, 10f, 10f), new Rectangle2D.Float(0f, 0f, 10f, 10f)));
-        ((XpsVisualBrush)gridPath.getFill()).setTileMode(XpsTileMode.Tile);
+        pathGeometry.get(0).setStartPoint(new Point2D.Float(0f, 5f));
 
         // New canvas
         XpsCanvas canvas = doc.addCanvas();
         canvas.setRenderTransform(doc.createMatrix(1f, 0f, 0f, 1f, 268f, 70f));
         // Add grid
-        canvas.addPath(gridPath);
+        // Path for magenta grid
+        XpsPathGeometry gridPathGeometry = pathGeometry;
+        XpsPath gridPath = canvas.addPath(gridPathGeometry);
+        gridPath.setFill(doc.createVisualBrush(visualCanvas,
+                new Rectangle2D.Float(0f, 0f, 10f, 10f), new Rectangle2D.Float(0f, 0f, 10f, 10f)));
+        ((XpsVisualBrush)gridPath.getFill()).setTileMode(XpsTileMode.Tile);
         // Red transparent rectangle in the middle top
         XpsPath path = canvas.addPath(doc.createPathGeometry("M 10,10 L 228,10 228,100 10,100"));
         path.setFill(doc.createSolidColorBrush(doc.createColor(1.0f, 0.0f, 0.0f)));
