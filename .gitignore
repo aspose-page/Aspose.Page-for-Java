@@ -20,6 +20,8 @@ classes/
 generated/
 bin/
 * Out*
+*_out_*
+*_out*
 * out*
 *.ldb
 _ReSharper*/
