@@ -22,19 +22,19 @@ public class AddEllipsePS {
 		//Create save options with A4 size
 		PsSaveOptions options = new PsSaveOptions();
 		
-		// Create new multipaged PS Document with one page opened
+		// Create new PS Document with the page opened
         PsDocument document = new PsDocument(outPsStream, options, false);
 		
         //Set paint for filling rectangle
         document.setPaint(Color.ORANGE);        
-        //Fill the first rectangle
+        //Fill the first ellipse
         document.fill(new Ellipse2D.Float(250, 100, 150, 100));
         
         //Set paint for stroking rectangle
         document.setPaint(Color.RED);
         //Set stroke
         document.setStroke(new BasicStroke(3));
-        //Stroke (outline) the second rectangle
+        //Stroke (outline) the second ellipse
         document.draw(new Ellipse2D.Float(250, 300, 150, 100));
 
         //Close current page

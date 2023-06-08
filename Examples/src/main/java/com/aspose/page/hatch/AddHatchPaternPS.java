@@ -26,7 +26,7 @@ public class AddHatchPaternPS {
 		//Create save options with A4 size
 		PsSaveOptions options = new PsSaveOptions();
 		
-		// Create new multipaged PS Document with one page opened
+		//Create new PS Document with the page opened
         PsDocument document = new PsDocument(outPsStream, options, false);
 		
         int x0 = 20;
@@ -89,11 +89,11 @@ public class AddHatchPaternPS {
         //Fill a text with the hatch pattern
         TexturePaint paint = HatchPaintLibrary.getHatchTexturePaint(HatchStyle.DiagonalCross, Color.RED, Color.YELLOW);
         Font font = new Font("Arial", Font.BOLD, 96);
-        document.fillAndStrokeText("ABC", font, 200, 400, paint, Color.BLACK, stroke);
+        document.fillAndStrokeText("ABC", font, 200, 320, paint, Color.BLACK, stroke);
 
         //Outline the text with the hatch pattern
         paint = HatchPaintLibrary.getHatchTexturePaint(HatchStyle.Percent70, Color.BLUE, Color.WHITE);
-        document.outlineText("ABC", font, 200, 600, paint, new BasicStroke(5));
+        document.outlineText("ABC", font, 200, 420, paint, new BasicStroke(5));
 
         //Close current page
 		document.closePage();

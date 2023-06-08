@@ -28,7 +28,7 @@ public class AddTextureTilingPaternPS {
 		//Create save options with A4 size
 		PsSaveOptions options = new PsSaveOptions();
 		
-		// Create new multipaged PS Document with one page opened
+		//Create new PS Document with the page opened
         PsDocument document = new PsDocument(outPsStream, options, false);
 		
         
