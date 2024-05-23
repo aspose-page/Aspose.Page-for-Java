@@ -1,4 +1,4 @@
-package com.aspose.page.conversion;
+package com.aspose.page.ex.conversion;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -7,7 +7,7 @@ import java.io.IOException;
 import com.aspose.eps.PsDocument;
 import com.aspose.eps.device.ImageSaveOptions;
 import com.aspose.page.ImageFormat;
-import com.aspose.page.utilities.Utils;
+import com.aspose.page.ex.utilities.Utils;
 
 public class PostScriptToImage {
     public static void main(String[] args) throws Exception {
