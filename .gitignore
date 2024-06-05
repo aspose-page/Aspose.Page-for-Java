@@ -3,6 +3,7 @@
 .project
 .settings/
 test-output/
+**/.metadata
 
 # IntelliJ project files
 .idea/
