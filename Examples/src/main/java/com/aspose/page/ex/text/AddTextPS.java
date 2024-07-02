@@ -73,6 +73,19 @@ public class AddTextPS {
 		//Fill text with orange color and stroke with blue colored 2-points width pen.
 		document.fillAndStrokeText(str, drFont, 50, 550, Color.ORANGE, Color.BLUE, stroke);
 		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		
+		/////////////////////////////// Using custom font (located in custom fonts folders) ang glyphs widths for filling text ////////
+		drFont = ExternalFontCache.fetchDrFont("Palatino Linotype", fontSize, Font.PLAIN);
+		//Glyphs widths
+		float[] widths = new float[] { 87, 87, 87, 87, 34, 87, 87 };
+		//Fill ASCII text using with assigning glyphs widths.
+		document.fillText("BAMBOOK", widths, drFont, 50, 600, Color.BLUE);
+		///////////////////////////// Using custom font (located in custom fonts folders) ang glyphs widths for filling unicode text //
+		drFont = ExternalFontCache.fetchDrFont("Times New Roman", fontSize, Font.BOLD);
+		widths = new float[] { 87, 34, 87, 87, 87, 87, 87 };
+		//Fill Unicode text using with assigning glyphs widths.
+		document.fillText("ЗООПАРК", widths, drFont, 50, 650, Color.ORANGE);
+		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         
 		//Close current page
         document.closePage();

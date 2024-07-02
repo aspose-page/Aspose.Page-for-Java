@@ -2,6 +2,7 @@ package com.aspose.page.ex.canvas;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Shape;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Rectangle2D;
@@ -9,6 +10,7 @@ import java.io.FileOutputStream;
 
 import com.aspose.eps.PsDocument;
 import com.aspose.eps.device.PsSaveOptions;
+import com.aspose.page.License;
 import com.aspose.page.ex.utilities.Utils;
 
 public class ClippingPS {
@@ -18,6 +20,8 @@ public class ClippingPS {
 		//ExStart:AddText
 		// The path to the documents directory.
 		String dataDir = Utils.getDataDir();
+		
+		new License().setLicense("D:\\Aspose.Page.Java.lic");
 		
 		//Create output stream for PostScript document
 		FileOutputStream outPsStream = new FileOutputStream(dataDir + "Clipping_outPS.ps");
@@ -63,6 +67,29 @@ public class ClippingPS {
 		
 		document.setStroke(stroke);
 		
+		//Draw the rectangle in the current graphics state (has no clipping) above clipped rectangle
+		document.draw(rectangle);
+		
+		//////////////////////////////////////Clipping by text //////////////////////////////////////////////////////////////////////
+		
+		//Save graphics state in order to return back to this state after transformation
+		document.writeGraphicsSave();
+		
+		//Displace current graphics state on 100 points to the right and 100 points to the bottom.
+		document.translate(0, 350);
+		
+		int fontSize = 120;
+		Font font = new Font("Arial", Font.BOLD, fontSize);
+		
+		//Clip rectangle by text's outline
+		document.clipText("ABC", font, 20, fontSize + 10);		
+		document.fill(rectangle);
+		
+		document.writeGraphicsRestore();
+		
+		document.translate(0, 350);
+		
+		document.setStroke(stroke);
 		//Draw the rectangle in the current graphics state (has no clipping) above clipped rectangle
 		document.draw(rectangle);
 		
