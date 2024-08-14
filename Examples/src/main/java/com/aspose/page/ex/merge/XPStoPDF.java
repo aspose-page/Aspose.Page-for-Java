@@ -21,7 +21,7 @@ public class XPStoPDF {
         options.setTextCompression(com.aspose.xps.rendering.PdfTextCompression.Flate);
         options.setPageNumbers(new int[] { 1, 2, 6 });
 
-        document.mergeToPdf(filesForMerge, dataDir + "XPStoPDF.pdf", options);
+        document.mergeToPdf(dataDir + "XPStoPDF.pdf", filesForMerge, options);
         // ExEnd:XPStoPDF
     }
 }
