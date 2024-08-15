@@ -32,7 +32,7 @@ public class ModifyXpsPageOnConversion {
         // The path to the documents directory.
     	String dataDir = Utils.getDataDir();
     	String fontDir = dataDir + "necessary_fonts/";
-        // Create new XPS Document
+        // Open an XPS document
         final XpsDocument doc = new XpsDocument(dataDir + "Sample3.xps");
         try {
         	// Create a font
