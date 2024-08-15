@@ -42,7 +42,7 @@ public class ModifyXpsPageOnConversion {
         		PdfSaveOptions options = new PdfSaveOptions();
         		// Set the filter for the pages that need conversion
         		options.setPageNumbers(new int[] { 2, 6, 7, 13 });
-        		// Add the event handler that will execute right before the conversion each page
+        		// Add the event handler that will execute right before the conversion of each page
         		options.getBeforePageSavingEventHandlers().add(new NavigationInjector(doc.createFont(fontStream), options.getPageNumbers()));
         		// Save resultant XPS document
         		doc.saveAsPdf(dataDir + "ModifyPageOnConversion_out.pdf", options);
