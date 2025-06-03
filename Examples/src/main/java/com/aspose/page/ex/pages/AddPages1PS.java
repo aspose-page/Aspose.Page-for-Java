@@ -4,6 +4,8 @@ import java.io.FileOutputStream;
 
 import com.aspose.eps.PsDocument;
 import com.aspose.eps.device.PsSaveOptions;
+import com.aspose.page.License;
+import com.aspose.page.ex.BaseExamplesTest;
 import com.aspose.page.ex.utilities.Utils;
 
 public class AddPages1PS {
@@ -11,6 +13,10 @@ public class AddPages1PS {
 	public static void main(String[] args) throws Exception
 	{ 
 		//ExStart:AddText
+		
+		// Set license
+		new License().setLicense(BaseExamplesTest.LICENSE_PATH);
+		
 		// The path to the documents directory.
 		String dataDir = Utils.getDataDir();
 		

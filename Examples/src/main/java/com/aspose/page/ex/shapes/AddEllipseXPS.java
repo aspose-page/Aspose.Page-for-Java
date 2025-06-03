@@ -10,6 +10,8 @@ import java.awt.geom.Point2D;
 import java.util.LinkedList;
 import java.util.List;
 
+import com.aspose.page.License;
+import com.aspose.page.ex.BaseExamplesTest;
 import com.aspose.page.ex.utilities.Utils;
 import com.aspose.xps.XpsCanvas;
 import com.aspose.xps.XpsDocument;
@@ -24,6 +26,10 @@ public class AddEllipseXPS {
     public static void main(String[] args) throws Exception
     {
         //ExStart:AddEllipse
+    	
+    	// Set license
+  	  	new License().setLicense(BaseExamplesTest.LICENSE_PATH);
+    	
         // The path to the documents directory.
         String dataDir = Utils.getDataDir();
         // Create new XPS Document

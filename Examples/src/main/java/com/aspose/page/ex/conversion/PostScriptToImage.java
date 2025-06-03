@@ -7,12 +7,18 @@ import java.io.IOException;
 import com.aspose.eps.PsDocument;
 import com.aspose.eps.device.ImageSaveOptions;
 import com.aspose.page.ImageFormat;
+import com.aspose.page.License;
+import com.aspose.page.ex.BaseExamplesTest;
 import com.aspose.page.ex.utilities.Utils;
 
 public class PostScriptToImage {
     public static void main(String[] args) throws Exception {
         // ExStart:PostScriptToImage
-        // The path to the documents directory.
+        
+    	// Set license
+  	  	new License().setLicense(BaseExamplesTest.LICENSE_PATH);
+    	
+    	// The path to the documents directory.
         String dataDir = Utils.getDataDir();
         //Initialize image format
         ImageFormat imageFormat = ImageFormat.PNG;
@@ -29,24 +35,18 @@ public class PostScriptToImage {
         // If you want to add special folder where fonts are stored. Default fonts folder in OS is always included.
         //options.setAdditionalFontsFolders(new String [] {"FONTS_FOLDER"});
 
-        // Default image format is PNG and it is not mandatory to set it in ImageDevice
-        // Default image size is 595x842 and it is not mandatory to set it in ImageDevice
-        com.aspose.eps.device.ImageDevice device = new com.aspose.eps.device.ImageDevice();
+        // Default image format is PNG and it is not mandatory to set it in ImageSaveOptions
+        // Default image size is 595x842 and it is not mandatory to set it in ImageSaveOptions
+        
         // But if you need to specify size and image format use constructor with parameters
-        //ImageDevice device = new ImageDevice(new Dimension(595, 842), com.aspose.eps.ImageFormat.Jpeg);
+        //ImageSaveOptions options = new ImageSaveOptions(new Dimension(600, 800), ImageFormat.JPEG);
 
-        try {
-            document.save(device, options);
-        } finally {
-            psStream.close();
-        }
-
-        byte[][] imagesBytes = device.getImagesBytes();
+        byte[][] imagesBytes = document.saveAsImage(options);
 
         int i = 0;
 
         for (byte [] imageBytes : imagesBytes) {
-            String imagePath = dataDir + "PSToImage" + i + "." + imageFormat.toString().toLowerCase();
+            String imagePath = dataDir + "PSToImage_out_" + i + "." + imageFormat.toString().toLowerCase();
             FileOutputStream fs = new FileOutputStream(imagePath);
 
             try {

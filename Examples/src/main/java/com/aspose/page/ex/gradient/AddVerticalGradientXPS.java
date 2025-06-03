@@ -6,20 +6,28 @@
 
 package com.aspose.page.ex.gradient;
 
+import java.awt.geom.Point2D;
+import java.util.LinkedList;
+import java.util.List;
+
+import com.aspose.page.License;
+import com.aspose.page.ex.BaseExamplesTest;
 import com.aspose.page.ex.utilities.Utils;
 import com.aspose.xps.XpsDocument;
 import com.aspose.xps.XpsGradientBrush;
 import com.aspose.xps.XpsGradientStop;
 import com.aspose.xps.XpsPath;
-import java.awt.geom.Point2D;
-import java.util.LinkedList;
-import java.util.List;
 
 public class AddVerticalGradientXPS {
     
     public static void main(String[] args) throws Exception
     {
-        // The path to the documents directory.
+    	// ExStart:AddVerticalGradientXPS
+    	
+    	// Set license
+  	  	new License().setLicense(BaseExamplesTest.LICENSE_PATH);
+    	
+    	// The path to the documents directory.
         String dataDir = Utils.getDataDir();
         
         //ExStart:VerticalGradient
@@ -44,6 +52,6 @@ public class AddVerticalGradientXPS {
         stops.clear();
         
         doc.save(dataDir + "VrticalGradient.xps");
-        //ExEnd:VerticalGradient
+        //ExEnd:AddVerticalGradientXPS
 }
 }

@@ -1,11 +1,17 @@
 package com.aspose.page.ex.conversion;
+import com.aspose.page.License;
+import com.aspose.page.ex.BaseExamplesTest;
 import com.aspose.page.ex.utilities.Utils;
 import com.aspose.xps.XpsDocument;
 
 public class XPStoPDF {
     public static void main(String[] args) throws Exception {
         // ExStart:XPStoPDF
-        // The path to the documents directory.
+        
+    	// Set license
+  	  	new License().setLicense(BaseExamplesTest.LICENSE_PATH);
+    	
+    	// The path to the documents directory.
         String dataDir = Utils.getDataDir();
         
         // Load XPS document
@@ -19,7 +25,7 @@ public class XPStoPDF {
         options.setPageNumbers(new int[] { 1, 2, 6 });
 
         // Save XPS document as PDF
-        document.saveAsPdf(dataDir + "XPStoPDF.pdf", options);
+        document.saveAsPdf(dataDir + "XPStoPDF_out.pdf", options);
         // ExEnd:XPStoPDF
     }
 }

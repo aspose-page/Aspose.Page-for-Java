@@ -34,7 +34,7 @@ Directory | Description
 
 ## Convert PostScript Files via Java
 
-- Supports PostScript language levels 1-3 with an exception of font types: Type2 (CFF), Type14 (Chameleon), Types 9, 10, 11, 32 (CID-Keyed)
+- Supports PostScript language levels 1-3 with an exception of font types: Type2 (CFF), Type14 (Chameleon), Types 9, 10, 11.
 - Save PS & EPS as PDF & images.
 
 ## Supported Environments

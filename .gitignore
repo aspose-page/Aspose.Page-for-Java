@@ -28,6 +28,7 @@ output*.*
 *.ldb
 _ReSharper*/
 *.eml
+*.ttf
 out/
 *.user
 *.resx

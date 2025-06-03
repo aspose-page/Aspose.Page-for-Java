@@ -9,6 +9,8 @@ package com.aspose.page.ex.visualBrush;
 import java.awt.geom.Point2D;
 import java.awt.geom.Rectangle2D;
 
+import com.aspose.page.License;
+import com.aspose.page.ex.BaseExamplesTest;
 import com.aspose.page.ex.utilities.Utils;
 import com.aspose.xps.XpsCanvas;
 import com.aspose.xps.XpsDocument;
@@ -21,6 +23,10 @@ public class AddGrid {
     public static void main(String[] args) throws Exception
     {
         //ExStart:AddGrid
+    	
+    	// Set license
+  	  	new License().setLicense(BaseExamplesTest.LICENSE_PATH);
+    	
         // The path to the documents directory.
         String dataDir = Utils.getDataDir();
 

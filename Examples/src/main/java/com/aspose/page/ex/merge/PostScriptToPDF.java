@@ -2,11 +2,16 @@ package com.aspose.page.ex.merge;
 
 import com.aspose.eps.PsDocument;
 import com.aspose.eps.device.PdfSaveOptions;
+import com.aspose.page.License;
+import com.aspose.page.ex.BaseExamplesTest;
 import com.aspose.page.ex.utilities.Utils;
 
 public class PostScriptToPDF {
     public static void main(String[] args) throws Exception {
         // ExStart:PostScriptToPDF
+    	
+    	// Set license
+  	    new License().setLicense(BaseExamplesTest.LICENSE_PATH);
 
         // The path to the documents directory.
         String dataDir = Utils.getDataDir();

@@ -6,18 +6,25 @@
 
 package com.aspose.page.ex.text;
 
+import java.awt.Color;
+
+import com.aspose.page.License;
+import com.aspose.page.ex.BaseExamplesTest;
 import com.aspose.page.ex.utilities.Utils;
 import com.aspose.xps.XpsDocument;
 import com.aspose.xps.XpsFontStyle;
 import com.aspose.xps.XpsGlyphs;
 import com.aspose.xps.XpsSolidColorBrush;
-import java.awt.Color;
 
 public class AddTextUsingUnicodeString {
     
     public static void main(String[] args) throws Exception
     {
         //ExStart:AddTextUsingUnicodeString
+    	
+    	// Set license
+  	  	new License().setLicense(BaseExamplesTest.LICENSE_PATH);
+    	
         // The path to the documents directory.
         String dataDir = Utils.getDataDir();
         // Create new XPS Document

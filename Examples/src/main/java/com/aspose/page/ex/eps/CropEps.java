@@ -4,13 +4,18 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
 import com.aspose.eps.PsDocument;
+import com.aspose.page.License;
+import com.aspose.page.ex.BaseExamplesTest;
 import com.aspose.page.ex.utilities.Utils;
 
 public class CropEps {
     
 	public static void main(String[] args) throws Exception {
-	  // ExStart:CropEps
+	  // ExStart:ConvertType1Font
 
+	  // Set license
+      new License().setLicense(BaseExamplesTest.LICENSE_PATH);
+		
       // The path to the documents directory.
       String dataDir = Utils.getDataDir();
       
@@ -37,6 +42,6 @@ public class CropEps {
       //initialBoundingBox[0] <= newBoundingBox[2] <= initialBoundingBox[2]
       //initialBoundingBox[1] <= newBoundingBox[3] <= initialBoundingBox[3]
       doc.cropEps(outputEpsStream, newBoundingBox);
-      // ExEnd:CropEps
+      // ExEnd:ConvertType1Font
     }
 }

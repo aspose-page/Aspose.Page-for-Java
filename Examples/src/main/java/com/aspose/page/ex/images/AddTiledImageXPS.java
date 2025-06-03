@@ -5,18 +5,25 @@
  */
 
 package com.aspose.page.ex.images;
+import java.awt.geom.Rectangle2D;
+
+import com.aspose.page.License;
+import com.aspose.page.ex.BaseExamplesTest;
 import com.aspose.page.ex.utilities.Utils;
 import com.aspose.xps.XpsDocument;
 import com.aspose.xps.XpsImageBrush;
 import com.aspose.xps.XpsPath;
 import com.aspose.xps.XpsTileMode;
-import java.awt.geom.Rectangle2D;
 
 public class AddTiledImageXPS {
 
     public static void main(String[] args) throws Exception
     {
         //ExStart:TiledImage
+    	
+    	// Set license
+  	  	new License().setLicense(BaseExamplesTest.LICENSE_PATH);
+    	
         // The path to the documents directory.
         String dataDir = Utils.getDataDir();
 

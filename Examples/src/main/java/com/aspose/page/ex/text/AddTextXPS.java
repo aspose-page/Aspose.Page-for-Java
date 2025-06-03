@@ -8,6 +8,8 @@ package com.aspose.page.ex.text;
 
 import java.awt.Color;
 
+import com.aspose.page.License;
+import com.aspose.page.ex.BaseExamplesTest;
 import com.aspose.page.ex.utilities.Utils;
 import com.aspose.xps.XpsDocument;
 import com.aspose.xps.XpsFontStyle;
@@ -18,6 +20,10 @@ public class AddTextXPS {
     
     public static void main(String[] args) throws Exception
     {   //ExStart:AddText
+    	
+    	// Set license
+  	  	new License().setLicense(BaseExamplesTest.LICENSE_PATH);
+    	
         // The path to the documents directory.
         String dataDir = Utils.getDataDir();
         // Create new XPS Document

@@ -1,10 +1,16 @@
 package com.aspose.page.ex.merge;
+import com.aspose.page.License;
+import com.aspose.page.ex.BaseExamplesTest;
 import com.aspose.page.ex.utilities.Utils;
 import com.aspose.xps.XpsDocument;
 
 public class XPStoPDF {
     public static void main(String[] args) throws Exception {
         // ExStart:XPStoPDF
+    	
+    	// Set license
+  	  	new License().setLicense(BaseExamplesTest.LICENSE_PATH);
+    	
         // The path to the documents directory.
         String dataDir = Utils.getDataDir();
         

@@ -6,14 +6,19 @@ import java.io.FileOutputStream;
 
 import com.aspose.eps.PsDocument;
 import com.aspose.page.DimensionF;
+import com.aspose.page.License;
 import com.aspose.page.Units;
+import com.aspose.page.ex.BaseExamplesTest;
 import com.aspose.page.ex.utilities.Utils;
 
 public class ResizeEps {
     
 	private void runPoints() throws Exception {
 	  // ExStart:ResizeEpsPoints
-
+		
+	  // Set license
+	  new License().setLicense(BaseExamplesTest.LICENSE_PATH);
+		
       // The path to the documents directory.
       String dataDir = Utils.getDataDir();
       
